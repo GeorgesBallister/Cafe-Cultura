@@ -1,0 +1,14 @@
+body{
+    background-color: #593510;
+}
+
+.indexpai{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+img.indexpai{
+    width: 200px;
+}
