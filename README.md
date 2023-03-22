@@ -1,3 +1,4 @@
+<img src=".\Imagens-e-SRC-Principais\Imagens\Icone\Icone.png">
 # Coffe-Culture-Senac-Mobile
 Este projeto foi desenvolvido pelos alunos do curso de Análise e Desenvolvimento de Sistemas do SENAC, utilizando somente HTML, CSS e JavaScript. O objetivo principal foi aprimorar nossos conhecimentos em desenvolvimento web, especialmente em relação ao desenvolvimento de interfaces e aplicações móveis.
 
@@ -9,8 +10,8 @@ Através deste projeto, pudemos colocar em prática diversas habilidades e técn
 
 |Pagina | Responsavel | Status| Descrição|
 ---| ---| ---| ---|
-|**index**|Georges B.|`Feito`|Pagina Para testar todo o Codigo|
-|**1 - Login**|Georges B.|`Não-Feito`|Eu não sei se vai ter então nao vou digitar nada aqui|
-|**2- Cadastro**|Georges B.|`Não-Feito`|Eu não sei se vai ter então nao vou digitar nada aqui|
-|**3 - Bem Vindo**|Georges B.|`Não-Feito`|Pagina Para testar todo o Codigo|
-|**?? - Lista de Cafeterias**|Georges B.|`Não-Feito`|Pagina Para testar todo o Codigo|
+|**index (Coração do Site)**|Georges B.|`Feito`|Pagina Para testar todo o Código|
+|**1 - Login**|???|`Não-Feito`|???|
+|**2- Cadastro**|???|`Não-Feito`|???|
+|**3 - Bem Vindo**|???|`Não-Feito`|???|
+|**?? - Lista de Cafeterias**|???|`Não-Feito`|???|
