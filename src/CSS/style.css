@@ -1,14 +1,69 @@
-body{
+/*Impots*/
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
     background-color: #593510;
+
 }
 
-.indexpai{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.elementosindex {
+    margin: 0%;  
+    width: auto;
+    height: -50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
 
-
-img.indexpai{
+.logo {
     width: 200px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+
+
+}
+
+
+/*
+-----------Botões-----------
+*/
+
+/*Base*/
+.botao {
+    background-color: #313131;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.botaocomecar {
+    background-color: #cb8640; 
+    color: white; 
+    
+}
+
+.botaocomecar:hover {
+    background-color: #36210c;
+    color: white;
 }
