@@ -3,6 +3,7 @@
 
 * {
     font-family: 'Inter', sans-serif;
+    color: white;
 }
 
 body {
@@ -51,7 +52,7 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 15px 2px;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     cursor: pointer;
