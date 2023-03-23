@@ -217,7 +217,7 @@ font-size:1.7rem;
 }
 
 .loja{
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(255, 226, 205);
     border-radius: 30px;
     display: flex;
     gap: 20px;
@@ -249,4 +249,8 @@ font-size:1.7rem;
     margin: 2%;
     margin-left: 50%;
     margin-right: auto;
+    width: 10rem;
+    height: 5rem;
+    border-radius: 30px;
+    background-color: #ffffff;
 }
