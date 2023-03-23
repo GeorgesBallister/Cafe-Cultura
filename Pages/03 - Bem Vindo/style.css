@@ -29,13 +29,11 @@ scroll-padding-top: 7rem;
 scroll-behavior: smooth;
 }
 
-
-#menu-btn{
-    font-size: 3rem;
-    color:var(--main-color);
-    cursor:pointer;
-
+section{
+    padding:2rem 9%;
 }
+
+
 .btn{
 display: inline-block;
 padding:.9rem 1.5rem;
@@ -65,7 +63,7 @@ font-size:1.7rem;
     justify-content: space-between;
     z-index:100;
     background:#fff;
-    box-shadow: 0.5rem 1rem rgba(0,0,0,1);
+    box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
     padding:2rem 9%;
 
 }
@@ -100,23 +98,111 @@ font-size:1.7rem;
 
 }
 
+.home{
+    min-height: 100vh;
+    padding-top: 12rem;
+    background:url(papel-digital-bege-pintado-a-mao-em-aquarela-sepia_199112-398.avif) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
-@media(max-width:768px){
+.home .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+   }
+
+    .home .row .content{
+     flex:1 1 42rem;
+
+    }
+
+    .home .row .image{
+        flex:1 1 42rem;
+        padding-top: 10rem;
+        text-align: center;
+}
+.home .row .image img{
+    height:35rem;
+    animation: float 4s linear infinite;
+
+}
+
+@keyframes float{
+0%, 100%{
+    transform: translateY(0rem);
+}
+50%{
+    transform: translateY(-7rem);
+}
+
+}
+.home .row .content h3{
+    font-size: 6.5rem;
+    color:var(--main-color);
+    text-transform:uppercase;
+
+}
+
+
+/* media queries */
+
+@media(max-width:991px){
     html{
         font-size: 55%;
+    }
+
+    .header{
+        padding:2rem;
+    }
+    section{
+        padding:2rem; 
+    }
+}
+    @media(max-width:768px){
+    
+         
+        #menu-btn{
+            display:initial;
         }
 
-.header{
-    padding:2rem;
-}
+        #menu-btn.fa.times{
+            transform:rotate(180deg);
+        }
+
+        .header .navbar{
+        position: absolute;
+        top:99%; left:0; right:0;
+        background: #fff; 
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    
+    }
+
+    
+
+    .header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+    }
+
+
+    .header .navbar a{
+    display: block;
+    font-size: 2.2rem;
+    margin:0;
+    padding:1.5rem 2rem;
+         
+    }
+
 }
 
 @media(max-width:450px){
     html{
-        font-size: 50%;
-        }
+        font-size:50%;
+    }
 
-.header{
-    padding:2rem;
-}
+    .header{
+        padding:2rem;
+    }
 }
