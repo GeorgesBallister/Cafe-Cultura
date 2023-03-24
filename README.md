@@ -1,4 +1,4 @@
-<img src=".\Imagens-e-SRC-Principais\Imagens\Icone\Icone.png">
+<img src="./assets/Icone.svg">
 
 # Coffe-Culture-Senac-Mobile
 Este projeto foi desenvolvido pelos alunos do curso de Análise e Desenvolvimento de Sistemas do SENAC, utilizando somente HTML, CSS e JavaScript. O objetivo principal foi aprimorar nossos conhecimentos em desenvolvimento web, especialmente em relação ao desenvolvimento de interfaces e aplicações móveis.
