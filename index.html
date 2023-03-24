@@ -4,49 +4,115 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Isso aqui é o icone unico sempre será esse caminho-->
     <link
       rel="shortcut icon"
-      href="./Imagens-e-SRC-Principais/Imagens/Icone/Frame 1Icone.svg"
+      href="../../Imagens-e-SRC-Principais/Imagens/Icone/Frame 1Icone.svg"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="/Imagens-e-SRC-Principais/src/CSS/style.css" />
+    <!--Modificar o stylesheet unico pra isso aqui-->
+
+    <link rel="stylesheet" href="./src/CSS/style.css" media="screen" />
     <title>Coffe Culture</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
   </head>
+
   <body>
-   
-    <div class="elementosindex">
+    <header class="header">
+      <a href="#" class="logo">
+        Coffee Culture <i class="fas fa-mug-hot"></i>
+      </a>
 
-            <!--Imagem Logo-->
-            <img
-            class="logo"
-            src="./Imagens-e-SRC-Principais/Imagens/Logo/LogoLogo-Grande.svg"
-            alt="Logo Do Site"
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#home">sobre nós</a>
+        <a href="#home">cafeterias</a>
+        <a href="#home">escolha a ocasião</a>
+        <a href="#home">mais perto de você</a>
+      </nav>
+
+      <a href="#" class="btn">Pesquisar</a>
+    </header>
+
+    <section class="home" id="home">
+      <div class="row">
+        <div>
+          <div class="content">
+            <h3>Bem-Vindo(a) ao <br />Coffee Culture</h3>
+            <a href="#" class="btn">Acesse já</a>
+          </div>
+        </div>
+        <div class="image">
+          <img
+            src="./assets/image-removebg-preview (9).png"
+            alt="Image"
+            height="800"
+            width="400
+            "
+            class="main-home-image"
+            alt=""
           />
+        </div>
+      </div>
+    </section>
 
-      <!--Mensagem da PAgina de Teste-->
-      <h1>Pagina de Teste</h1>
-      <p>A finalidade desta página é permitir a realização de testes mais rápidos em todas as outras páginas. Ao criar uma nova página, por favor, adicione um botão seguindo o modelo abaixo. Essa prática tem como objetivo tornar nossos testes mais eficientes e funcionais. :)</p>
+    <div class="grid">
+      <div class="loja">
+        <div>
+          <img src="./assets/Lojas/Loja 1/Starbucks.jpg" alt="Imagem da Loja" />
+        </div>
+        <!--Nome da Loja-->
+        <div>
+          <h1>Loja Star-Crucks</h1>
 
-      
-      <!--Botão Login (BASE)-->
-      <a href="./Pages/01 - Login/login.html">
-        <button class="botao botaocomecar">1 - Login (Aqui é o começo do APP)</button>
-      </a>
-      <!--Fim do BOTÃO-->
+          <!--Descrição-->
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
+            rerum suscipit ipsa saepe unde ipsum voluptate distinctio amet non
+            autem maxime culpa sed dicta laudantium sequi dolor, doloribus
+            doloremque placeat.br
+          </p>
 
-      <!--Botão Cadastro (BASE)-->
-      <a href="./Pages/02- Cadastro/cadastro.html">
-        <button class="botao botaocomecar">2 - Cadastro</button>
-      </a>
-      <!--Fim do BOTÃO-->
+          <!--Localização-->
+          <address>
+            Av. Castelo Branco, 2051 Barra de Jangada, Jaboatão dos Guararapes,
+            PE
+          </address>
+          <!--Botão de ascesso-->
+          <button type="submit">Ascese Já</button>
+        </div>
+        
+      </div>
 
-       <!--Botão Bem-Vindo (BASE)-->
-       <a href="./Pages/03 - Bem Vindo/bem-vindo.html">
-        <button class="botao botaocomecar">3 - Bem-Vindo</button>
-      </a>
-      <!--Fim do BOTÃO-->
+      <div class="loja">
+        <div>
+          <img src="./assets/Lojas/Loja 2/DivinnoCaffeLogo.jpeg" alt="Imagem da Loja" />
+        </div>
+        <!--Nome da Loja-->
+        <div>
+          <h1>D'Vino Caffé</h1>
 
-      
+          <!--Descrição-->
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
+            rerum suscipit ipsa saepe unde ipsum voluptate distinctio amet non
+            autem maxime culpa sed dicta laudantium sequi dolor, doloribus
+            doloremque placeat.br
+          </p>
+
+          <!--Localização-->
+          <address>
+            Rua Padre Giordano, 310, Recife, Pernambuco 51021-490 Brasil
+          </address>
+          <!--Botão de ascesso-->
+          <button type="submit">Ascese Já</button>
+        </div>
+
     </div>
+    <script src="./src/JavaScript/script.js"></script>
   </body>
 </html>
