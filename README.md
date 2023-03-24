@@ -12,7 +12,4 @@ Através deste projeto, pudemos colocar em prática diversas habilidades e técn
 |Pagina | Responsavel | Status| Descrição|
 ---| ---| ---| ---|
 |**index (Coração do Site)**|Georges B.|`Feito`|Pagina Para testar todo o Código|
-|**1 - Login**|???|`Não-Feito`|???|
-|**2- Cadastro**|???|`Não-Feito`|???|
-|**3 - Bem Vindo**|???|`Não-Feito`|???|
-|**?? - Lista de Cafeterias**|???|`Não-Feito`|???|
+|**1 - Bem Vindo**|Todos|`Feito`||
