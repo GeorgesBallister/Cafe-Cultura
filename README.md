@@ -44,11 +44,16 @@ Através deste projeto, pudemos colocar em prática diversas habilidades e técn
   <tbody>
 <tr>
     <td><p align="left-center"><b>Doralice Mota</b></p></td>
-    <td><a href="#" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank" align="center"></a><a href="https://github.com/doramota" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank" align="center"></a></td>
+    <td><a href="https://www.linkedin.com/in/doralice-mota-b02404237/" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank" align="center"></a><a href="https://github.com/doramota" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank" align="center"></a></td>
   </tr>
     
 <tr>
     <td><p align="left-center"><b>Gabriel Alves</b></p></td>
+    <td><a href="#" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank" align="center"></a><a href="#" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank" align="center"></a></td>
+  </tr> 
+  
+<tr>
+    <td><p align="left-center"><b>Gabriel Victor</b></p></td>
     <td><a href="#" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank" align="center"></a><a href="#" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank" align="center"></a></td>
   </tr>
     
