@@ -277,8 +277,12 @@ h3 {
 }
 
 .menu .menu-list ul li img {
-  max-width: 90%;
+  max-width: 100%;
   cursor: pointer;
+}
+
+.imagens-local img{
+  width: 30rem;
 }
 
 /* Menu do rodapé */
