@@ -56,19 +56,59 @@
         
         <div class="container">
             <div class="btn-group-vertical">
-              <button type="button" class="btn btn-primary rounded-circle">Café escritório</button>
-              <button type="button" class="btn btn-primary rounded-circle">Café romântico</button>
-              <button type="button" class="btn btn-primary rounded-circle">Café colônial</button>
+              <button type="button" id="btn1" class="btn btn-primary rounded-circle" onclick="toggleActive(this)">Café escritório</button>
+              <button type="button" id="btn2" class="btn btn-primary rounded-circle" onclick="toggleActive(this)">Café romântico</button>
+              <button type="button" id="btn3" class="btn btn-primary rounded-circle" onclick="toggleActive(this)">Café colônial</button>
             </div>
           </div>
+
+          <h3 id="txtrec"style="text-shadow: 3px 3px 3px rgba(10, 10, 10, 0.2);">Cafeterias recomendadas para você:</h3>
+          <h3 id="txtava"style="display:none; text-shadow: 3px 3px 3px rgba(10, 10, 10, 0.2);">Cafeterias mais avaliadas para você:</h3>
+
+          <div id="grid0" class="image-grid-base">
+            <img src="./Images/castigliani_cafes_proximas.png">
+            <img src="./Images/sao_braz_coffee_proximas.png">
+            <img src="./Images/delta_expresso_proximas.png">
+            <img src="./Images/com_dengo_proximas.png">
+          </div>
+          <div id="grid1" class="image-grid" style="display:none">
+            <img src="./Images/d_vino_cafe_escritorio.png">
+            <img src="./Images/cafe_tao_escritorio.png">
+            <img src="./Images/toky_os_cafe_escritorio.png">
+            <img src="./Images/galo_padeiro_escritorio.png">
+          </div>
+          <div id="grid2" class="image-grid" style="display:none">
+            <img src="./Images/cafe_mais_prosa_romantico.png">
+            <img src="./Images/o_patio_cafe_cozinha_romantico.png">
+            <img src="./Images/l_amour_cafe_romantico.png">
+            <img src="./Images/brennand_cafe_romantico.png">
+          </div>
+          <div id="grid3" class="image-grid" style="display:none">
+            <img src="./Images/versado_cafe_colonial.png">
+            <img src="./Images/borsoi_cafe_colonial.png">
+            <img src="./Images/cafe_km_colonial.png">
+            <img src="./Images/delicatessen_morada_colonial.png">
+          </div>
           
-          <h3 style="text-shadow: 3px 3px 3px rgba(10, 10, 10, 0.2);">Cafeterias mais avaliadas para você:</h3>
-
-
-
-          
-
-          <div class="menu">
+          <!--<div class="container-img">
+            <div class="row">
+              <div class="col-md-6 col-lg-6">
+                <img src="./Images/DvinoAva.png" class="img-fluid">
+              </div>
+              <div class="col-md-6 col-lg-6">
+                <img src="./Images/DvinoAva.png" class="img-fluid">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-lg-6">
+                <img src="./Images/DvinoAva.png" class="img-fluid">
+              </div>
+              <div class="col-md-6 col-lg-6">
+                <img src="./Images/DvinoAva.png" class="img-fluid">
+              </div>
+            </div>
+          </div>-->
+          <!--<div class="menu">
             <div class="menu-list">
                 <ul>
                     <li><img src="./Images/divino_café__imagem_certa-removebg-preview.png" alt=""></li>
@@ -79,7 +119,7 @@
                     <li><img src="./Images/image-removebg-preview (7).png" alt=""></li>
                 </ul>
             </div>
-          </div>
+          </div>-->
           
           
 		<!-- Conteúdo da página aqui -->

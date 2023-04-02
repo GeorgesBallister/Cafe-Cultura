@@ -16,6 +16,7 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
+  min-height: 100vh;
 }
 main{
   margin-bottom: 60px;
@@ -158,62 +159,57 @@ h3 {
   }
 }
 
-/*form {
+.image-grid {
   display: flex;
-	align-items: center;
-	justify-content: center;
-  }
-
-.barra-pes {
-  display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 50vw; /* set the height to half of the width to make it square */
 }
-  input[type="text"] {
-  background-image: url('/Nova Versão/Images/akar-icons_search.png');
-  background-repeat: no-repeat;
-  background-position: left center;
-  padding-left: 20px;
-  border: 2px solid #ccc;
-  border-radius: 30px;
-  width: 30vh;
-  padding: 1vh;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  }*/
 
-/*input[type="text"] {
-    background-image: url('./Images/logo.png');
-    background-repeat: no-repeat;
-    background-position: left center;
-    padding: 15px;
-    border: 2px solid #ccc;
-    border-radius: 30px;
-    padding: 10px;
-    width: 300px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  }
-  
-  button[type="submit"] {
-    background: white;
-    border: none;
-    font-size: 1.2em;
-    color: #ccc;
-    margin-left: -50px;
-    cursor: pointer;
-  }*/
+.image-grid img {
+  width: 48%; /* set the width of the images */
+  margin-bottom: 5%; /* set the vertical spacing between images */
+}
 
-/* .search-container .search-icon {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 10px;
-    font-size: 20px;
-    color: #999;
-  } */
+.image-grid-base {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 50vw; /* set the height to half of the width to make it square */
+}
+
+.image-grid-base img {
+  width: 48%; /* set the width of the images */
+  margin-bottom: 5%; /* set the vertical spacing between images */
+}
+
 
 /* Botões de Categorias */
-.container .btn-group-vertical {
+.container {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.btn-group-vertical {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-left: 2vh;
+}
+
+.btn-group-vertical button {
+  flex: 0 0 auto;
+  white-space: normal;
+  margin-right: 2vh;
+  margin-bottom: 1vh;
+  border-radius: 30px;
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+/*.container .btn-group-vertical {
   position: relative;
   align-items: center;
   display: flex;
@@ -227,11 +223,16 @@ h3 {
 
 .container .btn-group-vertical button {
   border-radius: 30px;
+}*/
+.btn-group-vertical button.active {
+  background-color: rgb(192, 159, 119);
+  transition: 0.15s;
+  cursor: pointer;
 }
 
 .btn-group-vertical button:hover {
   background-color: rgb(192, 159, 119);
-  transition: 1s;
+  transition: 0.15s;
   cursor: pointer;
 
 }
@@ -316,6 +317,8 @@ h3 {
   border-top-color: #8b572a;
 }
 .footer-icon-text {
+  font-family:'Lato';
+  font-weight:bold;
   font-size: 12px;
   margin-top: 5px;
   color: #76767c;
