@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Café Cultura</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="./src/style.css">
-</head>
-<body>
-	<header>
-        <div class="header">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Cultura</title>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./src/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="header">
         <div class="logo-wrapper">
           <h1>Café <span style="color:#D2A754">Cultura</span></h1>
           <img src="./Images/Coffee cupXicrinha-Icone.png" alt="Logo-Titulo">
-        
         </div>
         <!--<div class="logo">
             <h1><span class="Cultura">Café</span> Cultura</h1>
@@ -29,22 +34,22 @@
                 <span class="search-icon"><i class="fa fa-search"></i></span>  
                 </div>
             </form> -->
-        </div>
+      </div>
     </header>
-	<main>
-        <div class="search-wrapper">
-            <form class="search-form">
-              <div class="search-icon">
-                <i class="fas fa-search"></i>
-              </div>
-              <input type="text" class="search-input" placeholder="Pesquisar">
-              <div class="settings-icon">
-                <i class="fas fa-sliders-h" style="color:#8b4513"></i>
-              </div>
-            </form>
+    <main>
+      <div class="search-wrapper">
+        <form class="search-form">
+          <div class="search-icon">
+            <i class="fas fa-search"></i>
           </div>
+          <input type="text" class="search-input" placeholder="Pesquisar">
+          <div class="settings-icon">
+            <i class="fas fa-sliders-h" style="color:#8b4513"></i>
+          </div>
+        </form>
+      </div>
 
-        <!--
+      <!--
         <div class="barra-pes">
             <form>
                 <input type="text" placeholder="Pesquisar...">
@@ -52,93 +57,70 @@
             </form>
         </div>
 -->
-        <h2>Categorias</h2>
-        
-        <div class="container">
-            <div class="btn-group-vertical">
-              <button type="button" id="btn1" class="btn btn-primary rounded-circle" onclick="toggleActive(this)">Café escritório</button>
-              <button type="button" id="btn2" class="btn btn-primary rounded-circle" onclick="toggleActive(this)">Café romântico</button>
-              <button type="button" id="btn3" class="btn btn-primary rounded-circle" onclick="toggleActive(this)">Café colônial</button>
-            </div>
-          </div>
+      <h2>Categorias</h2>
 
-          <h3 id="txtrec"style="text-shadow: 3px 3px 3px rgba(10, 10, 10, 0.2);">Cafeterias recomendadas para você:</h3>
-          <h3 id="txtava"style="display:none; text-shadow: 3px 3px 3px rgba(10, 10, 10, 0.2);">Cafeterias mais avaliadas para você:</h3>
-
-          <div id="grid0" class="image-grid-base">
-            <img src="./Images/castigliani_cafes_proximas.png">
-            <img src="./Images/sao_braz_coffee_proximas.png">
-            <img src="./Images/delta_expresso_proximas.png">
-            <img src="./Images/com_dengo_proximas.png">
-          </div>
-          <div id="grid1" class="image-grid" style="display:none">
-            <img src="./Images/d_vino_cafe_escritorio.png">
-            <img src="./Images/cafe_tao_escritorio.png">
-            <img src="./Images/toky_os_cafe_escritorio.png">
-            <img src="./Images/galo_padeiro_escritorio.png">
-          </div>
-          <div id="grid2" class="image-grid" style="display:none">
-            <img src="./Images/cafe_mais_prosa_romantico.png">
-            <img src="./Images/o_patio_cafe_cozinha_romantico.png">
-            <img src="./Images/l_amour_cafe_romantico.png">
-            <img src="./Images/brennand_cafe_romantico.png">
-          </div>
-          <div id="grid3" class="image-grid" style="display:none">
-            <img src="./Images/versado_cafe_colonial.png">
-            <img src="./Images/borsoi_cafe_colonial.png">
-            <img src="./Images/cafe_km_colonial.png">
-            <img src="./Images/delicatessen_morada_colonial.png">
-          </div>
-          
-          <!--<div class="container-img">
-            <div class="row">
-              <div class="col-md-6 col-lg-6">
-                <img src="./Images/DvinoAva.png" class="img-fluid">
-              </div>
-              <div class="col-md-6 col-lg-6">
-                <img src="./Images/DvinoAva.png" class="img-fluid">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6 col-lg-6">
-                <img src="./Images/DvinoAva.png" class="img-fluid">
-              </div>
-              <div class="col-md-6 col-lg-6">
-                <img src="./Images/DvinoAva.png" class="img-fluid">
-              </div>
-            </div>
-          </div>-->
-          <!--<div class="menu">
-            <div class="menu-list">
-                <ul>
-                    <li><img src="./Images/divino_café__imagem_certa-removebg-preview.png" alt=""></li>
-                    <li><img src="./Images/d_vino_cafe_imagem_certa-removebg-preview.png" alt=""></li>
-                    <li><img src="./Images/image-removebg-preview (6).png" alt=""></li>
-                    <li><img src="./Images/image-removebg-preview (7).png" alt=""></li>
-                    <li><img src="./Images/image-removebg-preview (7).png" alt=""></li>
-                    <li><img src="./Images/image-removebg-preview (7).png" alt=""></li>
-                </ul>
-            </div>
-          </div>-->
-          
-          
-		<!-- Conteúdo da página aqui -->
-        
-	</main>
-    <div class="footer">
-        <a href="./index.html" style="text-decoration:none; cursor:pointer;" class="footer-icon active">
-          <i class="fas fa-home"></i>
-          <div class="footer-icon-text active">Home</div>
-        </a>
-        <a href="./Paginas/Mais-perto-de-voce.html" style="text-decoration:none; cursor:pointer;" class="footer-icon">
-          <i class="fas fa-map-marker-alt"></i>
-          <div class="footer-icon-text">Mais perto de você</div>
-        </a>
-        <a href="./Paginas/Perfil-Cafeteria.html" style="text-decoration:none; cursor:pointer;" class="footer-icon">
-          <i class="fas fa-mug-hot"></i>
-          <div class="footer-icon-text">Perfil cafeteria</div>
-        </a>
+      <div class="container">
+        <div class="btn-group-vertical">
+          <button type="button" id="btn1" class="btn btn-primary rounded-circle"
+            onclick="toggleActive(this)">Café escritório</button>
+          <button type="button" id="btn2" class="btn btn-primary rounded-circle"
+            onclick="toggleActive(this)">Café romântico</button>
+          <button type="button" id="btn3" class="btn btn-primary rounded-circle"
+            onclick="toggleActive(this)">Café colônial</button>
+        </div>
       </div>
+
+      <h3 id="txtrec" style="text-shadow: 3px 3px 3px rgba(10, 10, 10, 0.2);">Cafeterias
+        recomendadas para você:</h3>
+      <h3 id="txtava" style="display:none; text-shadow: 3px 3px 3px rgba(10, 10,
+        10, 0.2);">Cafeterias mais avaliadas para você:</h3>
+
+      <div id="grid0" class="image-grid-base">
+        <img src="./Images/castigliani_cafes_proximas.png">
+        <img src="./Images/sao_braz_coffee_proximas.png">
+        <img src="./Images/delta_expresso_proximas.png">
+        <img src="./Images/com_dengo_proximas.png">
+      </div>
+      <div id="grid1" class="image-grid" style="display:none">
+        <img src="./Images/d_vino_cafe_escritorio.png">
+        <img src="./Images/cafe_tao_escritorio.png">
+        <img src="./Images/toky_os_cafe_escritorio.png">
+        <img src="./Images/galo_padeiro_escritorio.png">
+      </div>
+      <div id="grid2" class="image-grid" style="display:none">
+        <img src="./Images/cafe_mais_prosa_romantico.png">
+        <img src="./Images/o_patio_cafe_cozinha_romantico.png">
+        <img src="./Images/l_amour_cafe_romantico.png">
+        <img src="./Images/brennand_cafe_romantico.png">
+      </div>
+      <div id="grid3" class="image-grid" style="display:none">
+        <img src="./Images/versado_cafe_colonial.png">
+        <img src="./Images/borsoi_cafe_colonial.png">
+        <img src="./Images/cafe_km_colonial.png">
+        <img src="./Images/delicatessen_morada_colonial.png">
+      </div>
+
+   
+      <!-- Conteúdo da página aqui -->
+
+    </main>
+    <div class="footer">
+      <a href="./index.html" style="text-decoration:none; cursor:pointer;"
+        class="footer-icon active">
+        <i class="fas fa-home"></i>
+        <div class="footer-icon-text active">Home</div>
+      </a>
+      <a href="./Paginas/Mais-perto-de-voce.html" style="text-decoration:none;
+        cursor:pointer;" class="footer-icon">
+        <i class="fas fa-map-marker-alt"></i>
+        <div class="footer-icon-text">Mais perto de você</div>
+      </a>
+      <a href="./Paginas/Perfil-Cafeteria.html" style="text-decoration:none;
+        cursor:pointer;" class="footer-icon">
+        <i class="fas fa-mug-hot"></i>
+        <div class="footer-icon-text">Perfil cafeteria</div>
+      </a>
+    </div>
     <!--<footer>
         <nav class="footer-menu">
             <ul>
@@ -148,6 +130,6 @@
             </ul>
         </nav>
     </footer> -->
-	<script src="./src/script.js"></script>
-</body>
+    <script src="./src/script.js"></script>
+  </body>
 </html>
