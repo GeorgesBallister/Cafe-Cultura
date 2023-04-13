@@ -1,0 +1,590 @@
+/*Fontes Externas*/
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap");
+
+* {
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-color: #f3efef;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: 100vh;
+}
+
+main {
+  margin-bottom: 60px;
+}
+
+.hide {
+  display: none;
+}
+
+header {
+  background-color: #f3efef;
+  color: #3d2f2f;
+  /*display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;*/
+}
+
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 29px;
+  font-weight: bolder;
+  margin: 0;
+  padding: 20px;
+}
+
+h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 19px;
+  margin: 0;
+  padding: 20px;
+  font-style: georgia;
+  color: #846046;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-radius: 10%;
+  background-color: #846046;
+  border-color: #846046;
+}
+
+.btn {
+  background-color: #d9d9d9;
+  color: #000;
+}
+
+.btn-clicked {
+  background-color: #846046;
+  color: #000;
+}
+
+.btn-clicked {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.cafeterias-itens img{
+  width: auto;
+  height: 13rem;
+}
+
+/* Perfil Cafeteria*/
+.container-1 {
+  background: linear-gradient(to bottom right, #282C34, #10131A 80%);
+  text-align: center;
+  color: white;
+  padding: 10px;
+  margin: 0;
+  margin-top: 40px;
+  border-radius: 10px;  
+  width: 300px;
+  height: 200px;
+  position: relative;
+  bottom: 40px;
+  left: 48%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.image-logo img{
+  width: 60%;
+  margin-left: 15%;
+}
+
+.image-card img{
+  width: 84%;
+  margin-left: 4%;
+}
+.text-white {
+  font-family: "Lato", sans-serif;
+  color: #fff;
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.text-colored {
+  color: #846046;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
+}
+/* Perfil Cafeteria - fim*/
+
+.logo-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+.logo-img img {
+  width: 65%;
+  margin: 5%;
+  max-width: 100%;
+}
+
+
+.logo-wrapper {
+  flex-basis: 100%;
+  text-align: center;
+  display: inline-flex;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo-wrapper h1,
+span {
+  font-family: "Comic Neue", cursive;
+}
+
+.logo-wrapper img {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* Barra de pesquisa */
+.search-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-form {
+  position: relative;
+  display: flex;
+}
+
+.search-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search-icon i {
+  color: #ccc;
+}
+
+.search-input {
+  width: 300px;
+  padding: 15px 40px 15px 40px;
+  border: solid 1px grey;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1), inset 0 0 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+}
+
+.search-input::placeholder {
+  color: #ccc;
+}
+
+.results {
+  padding-left: 7%;
+  padding-bottom: 5%;
+  margin: 5% auto 0;
+  width: 80%;
+  height: 19rem;
+  border: solid transparent;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+
+}
+
+.results li {
+  list-style-type: none;
+  font-size: 18pt;
+  margin-bottom: 0.25rem;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+.results a{
+  text-decoration: none;
+  color:#8b572a
+}
+
+.locations li {
+  list-style-type: none;
+  font-size: 13pt;
+  margin-bottom: 0.25rem;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+.locations a{
+  text-decoration: none;
+  color:#8b572a
+}
+
+.settings-icon {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.settings-icon i {
+  color: #ccc;
+}
+
+@media (max-width: 767px) {
+  .search-input {
+    width: 200px;
+    font-size: 14px;
+  }
+}
+
+.grid-container {
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 80vw;
+  white-space: nowrap;
+}
+
+.image-grid img {
+  width: 30%;
+  margin-bottom: 5%;
+}
+
+.image-grid-base {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 30rem;
+  white-space: nowrap;
+}
+
+.image-grid-base img {
+  width: 30%;
+  margin-bottom: 5%;
+}
+
+/* Botões de Categorias */
+.container {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+
+.row-container{
+  height: 30rem;
+  overflow: auto;
+}
+.row img{
+  width: 90%;
+}
+
+.btn-group-vertical {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-left: 2vh;
+}
+
+.btn-group-vertical button {
+  flex: 0 0 auto;
+  white-space: normal;
+  margin-right: 2vh;
+  margin-bottom: 1vh;
+  border-radius: 30px;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+/*.container .btn-group-vertical {
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.container .btn-group-vertical button {
+  border-radius: 30px;
+}*/
+.btn-group-vertical button.active {
+  background-color: rgb(192, 159, 119);
+  transition: 0.15s;
+  cursor: pointer;
+}
+
+.btn-group-vertical button:hover {
+  background-color: rgb(192, 159, 119);
+  transition: 0.15s;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+.menu ul {
+  margin: 10px;
+  max-width: 90%;
+  padding-inline-start: 0px;
+}
+
+.menu .menu-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  /* margin: 0; */
+  /* padding: 0; */
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  max-width: 90%;
+}
+
+.menu .menu-list ul li {
+  margin: 10px;
+  max-width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu .menu-list ul li img {
+  max-width: 90%;
+  cursor: pointer;
+}
+
+/* Menu do rodapé */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f8f8f8;
+  border-top: 4px solid transparent;
+  padding-bottom: 5px;
+}
+
+.footer-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #76767c;
+  cursor: pointer;
+  border-top: 4px solid transparent;
+  padding-top: 12px;
+  margin-bottom: 4px;
+}
+
+.footer-icon.active {
+  color: #8b572a;
+  border-top-color: #8b572a;
+}
+
+.footer-icon:hover {
+  color: #8b572a;
+  border-top-color: #8b572a;
+}
+
+.footer-icon-text {
+  font-family: "Lato";
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 5px;
+  color: #76767c;
+}
+
+.footer-icon-text.active {
+  color: #8b572a;
+}
+
+@media (min-width: 768px) {
+
+  /* For screens 768px and larger, set the logo width to 30% of its container */
+  .logo-wrapper img {
+    width: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  /* For screens 1200px and larger, set the logo width to 20% of its container */
+  .logo-wrapper img {
+    width: 2rem;
+  }
+}
+
+/* Center the logo and search bar on smaller screens */
+@media (max-width: 767px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .search-bar {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .menu-list {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    margin-right: auto;
+    margin-left: auto;
+    color: #3d2f2f;
+  }
+
+  header img {
+    width: 7%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  /*input[type="text"] {
+        background-image: url('./Images/akar-icons_search.png');
+        background-repeat: no-repeat;
+        background-position: left center;
+        padding: 15px;
+        border: 2px solid #ccc;
+        border-radius: 30px;
+        padding: 10px;
+        width: 300px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      }
+      
+      button[type="submit"] {
+        background: white;
+        border: none;
+        font-size: 1.2em;
+        color: #ccc;
+        margin-left: -50px;
+        cursor: pointer;
+      }*/
+  h3 {
+    font-size: 19px;
+    margin: 0;
+    padding: 20px;
+    font-style: georgia;
+    color: #846046;
+  }
+
+  h2 {
+    color: #3d2f2f;
+  }
+}
+
+.imagens-local img {
+  width: 30rem;
+}
+
+.imagens-local img {
+  width: 30rem;
+}
+
+.cafeterias-itens img{
+
+  width: auto;
+  height: 13rem;
+
+}
+
+.cafeterias-proximas-itens img{
+  width: auto;
+  height: 100%;
+}
+
+.carrosel-vertical{
+  height: 70vh;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+@media only screen and (max-width: 400px) {
+  
+  .carrosel-vertical{
+    height: 70vh;
+  }
+
+}
+
+@media only screen and (max-width: 360px) {
+  
+  .carrosel-vertical{
+    height: 60vh;
+  }
+
+}
+
+.cafeterias-proximas-itens img{
+  width: 100%;
+}
