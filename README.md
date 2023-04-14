@@ -1,9 +1,5 @@
 # Café Cultura - Senac
 
-![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/iuricode/README-template?style=for-the-badge)
-![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/iuricode/README-template?style=for-the-badge)
-
 <img align="center" alt="Logo do projeto" height="150" src="https://user-images.githubusercontent.com/116905222/229333731-92af46e7-cd48-4561-824a-4d1523148154.png">
 
 Este projeto foi desenvolvido pelos alunos do curso de Análise e Desenvolvimento de Sistemas do SENAC, utilizando somente HTML, CSS e JavaScript. O objetivo principal foi aprimorar nossos conhecimentos em desenvolvimento web, especialmente em relação ao desenvolvimento de interfaces e aplicações móveis.
