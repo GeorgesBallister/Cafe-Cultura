@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café Cultura</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../src/style.css" />
+  </head>
+
+  
+  <body>
+    <header>
+      <div class="header">
+        <div class="logo-img">
+        <img src="../Images/logo-cafe.webp" alt="Logo do Café Cultura">
+          <!--<h1>Café <span style="color:#D2A754">Cultura</span></h1>
+          <img src="./Images/Coffee cupXicrinha-Icone.png" alt="Logo-Titulo">-->
+        </div>
+    </header>
+    <main>
+      <div class="search-wrapper">
+        <form class="search-form">
+          <div class="search-icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <div id="search-container">
+            <input type="text" id="search1" onfocus="ocultarElementos()" onblur="exibirElementos()" class="search-input"
+              placeholder="Pesquisar">
+          </div>
+        </form>
+      </div>
+      <ul id="search-result" class="results" style="display:none">
+  
+      </ul>
+<div id="conteúdo" style="display:block">
+      <!-- Conteúdo da página aqui -->
+      <h2>Cafeterias mais próximas de você:</h2>
+
+      <div class="container">
+        <div class="carrosel-vertical">
+          <div class="col-sm-4 cafeterias-proximas-itens">
+            <a href="../site/perfis/castigliani.html" alt=" Link Cafeteria Castigliani">
+            <img src="../Images/Grid-Perfil/PerfilCastigliani.webp" alt="Cafeteria Castigliani">
+          </a>
+          </div>
+          <div class="col-sm-4 cafeterias-proximas-itens">
+            <a href="../site/perfis/bistro.html" alt="Link Cafeteria Castigliani">
+            <img src="../Images/Grid-Perfil/PerfilBistro.webp" alt="Cafeteria Bistrô">
+          </a>
+          </div>
+          <div class="col-sm-4 cafeterias-proximas-itens">
+            <a href="../site/perfis/saobraz.html"alt="Link Cafeteria Castigliani">
+            <img src="../Images/Grid-Perfil/PerfilSaoBraz.webp" alt="Cafeteria Sao Braz">
+          </a>
+          </div>
+          <div class="col-sm-4 cafeterias-proximas-itens">
+            <a href="../site/perfis/santaclara.html"alt="Link Cafeteria Castigliani">
+            <img src="../Images/Grid-Perfil/PerfilSantaClara.webp" alt="Cafeteria Santa Clara">
+          </a>
+          </div>
+        
+        </div>
+      </div>
+
+        </div>
+      </div>
+</div>
+      <!--Fotter da Pagina-->
+    </main>
+    <div class="footer">
+      <a href="../index.html" style="text-decoration: none; cursor: pointer" class="footer-icon">
+        <i class="fas fa-home"></i>
+        <div class="footer-icon-text">Home</div>
+      </a>
+      <a href="./maisperto.html" style="text-decoration: none; cursor: pointer" class="footer-icon ">
+        <i class="fas fa-map-marker-alt"></i>
+        <div class="footer-icon-text ">Mais perto de você</div>
+      </a>
+      <a href="./perfilcaf.html" style="text-decoration: none; cursor: pointer" class="footer-icon  active">
+        <i class="fas fa-mug-hot"></i>
+        <div class="footer-icon-text active">Perfil cafeteria</div>
+      </a>
+    </div>
+    <!--<footer>
+        <nav class="footer-menu">
+            <ul>
+                <li><i class="fas fa-home"></i><a href="#">Início</a></li>
+                <li><i class="fas fa-map-marker-alt"></i><a href="#">Mais perto de você</a></li>
+                <li><i class="fas fa-mug-hot"></i><a href="#">Perfil Cafeteria</a></li>
+            </ul>
+        </nav>
+    </footer> -->
+    <script src="../src/script.js"></script>
+    <script>
+      function ocultarElementos() {
+        var conteudo = document.getElementById("conteúdo");
+        var resultados = document.getElementById("search-result");
+        var search = document.getElementById("search1");
+        conteudo.style.display = 'none';
+        fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+          // Search the JSON file on keyup event
+          search.addEventListener('keyup', () => {
+            // Get the user's input
+            const input = search.value.toLowerCase();
+      
+            // Only show resultados after at least 3 characters have been entered
+            if (input.length < 3) {
+              resultados.style.display = 'none';
+              return;
+            }
+      
+            // Filter the data array based on the user's input
+            const filteredData = data.filter(item => {
+              return item.nome.toLowerCase().includes(input) || item.local.toLowerCase().includes(input);
+            });
+      
+            // Clear the resultados container
+            resultados.innerHTML = '';
+      
+            // Display the filtered resultados in the resultados container
+            /*filteredData.forEach(item => {
+              const listapesq = document.createElement('li');
+              listapesq.innerText = `${item.nome}`;
+              listapesq.setAttribute('data-href', `https://google.com`);
+              resultados.appendChild(listapesq);
+            });*/
+            filteredData.forEach((item, index) => {
+              if (index >= 10) {
+                return; // sai do loop após o 10º item
+              }
+              const listapesq = document.createElement('li');
+              const link = document.createElement('a');
+            
+              link.innerText = item.nome;
+              link.href = item.links;
+              listapesq.appendChild(link);
+              resultados.appendChild(listapesq);
+            
+              listapesq.addEventListener('click', function() {
+                window.location.href = item.links;
+              });
+            });
+      
+            // Show the resultados container
+            resultados.style.display = 'block';
+          });
+        });
+      }
+      
+      function exibirElementos() {
+        var conteudo = document.getElementById("conteúdo");
+        var resultados = document.getElementById("search-result");
+        resultados.addEventListener('click', function(event) {
+          if (event.target.tagName != 'A') {
+            conteudo.style.display = 'block';
+            resultados.style.display = 'none';
+            return;
+          }
+          /*if (event.target.tagName === 'A') {
+            return;
+          }else{
+            conteudo.style.display = 'block';
+            resultados.style.display = 'none';
+          }
+          conteudo.style.display = 'block';
+          resultados.style.display = 'none';*/
+          
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+[
+  {
+    "nome": "Castigliani Cafés",
+    "local": "New York",
+    "links": "./perfis/castigliani.html"
+  },
+  {
+    "nome": "Sao Braz Coffee",
+    "local": "Los Angeles",
+    "links": "./perfis/saobraz.html"
+  },
+  {
+    "nome": "Delta Expresso",
+    "local": "Chicago",
+    "links": "./perfis/delta.html"
+  },
+  {
+    "nome": "Café Jaqueira",
+    "local": "Chicago",
+    "links": "./perfis/jaqueira.html"
+  },
+  {
+    "nome": "Contém Café",
+    "local": "Chicago",
+    "links": "./perfis/contem.html"
+  },
+  {
+    "nome": "Com Dengo",
+    "local": "Chicago",
+    "links": "./perfis/comdengo.html"
+  },
+  {
+    "nome": "D'Vino Caffé",
+    "local": "Chicago",
+    "links": "./perfis/dvino.html"
+  },
+  {
+    "nome": "Versado Café",
+    "local": "Chicago",
+    "links": "./perfis/versado.html"
+  },
+  {
+    "nome": "Tokyo's Cafe",
+    "local": "Chicago",
+    "links": "./perfis/tokyos.html"
+  },
+  {
+    "nome": "Galo Padeiro",
+    "local": "Chicago",
+    "links": "./perfis/galopadeiro.html"
+  },
+  {
+    "nome": "Elã - Cafés",
+    "local": "Chicago",
+    "links": "./perfis/ela.html"
+  },
+  {
+    "nome": "Café - Tão",
+    "local": "Chicago",
+    "links": "./perfis/cafetao.html"
+  },
+  {
+    "nome": "Café mais Prosa",
+    "local": "Chicago",
+    "links": "./perfis/maisprosa.html"
+  },
+  {
+    "nome": "O Pátio Café & Cozinha",
+    "local": "Chicago",
+    "links": "./perfis/patio.html"
+  },
+  {
+    "nome": "Lalá Café",
+    "local": "Chicago",
+    "links": "./perfis/lalacafe.html"
+  },
+  {
+    "nome": "Cafetteria Bistrô",
+    "local": "Chicago",
+    "links": "./perfis/bistro.html"
+  },
+  {
+    "nome": "Borsoi Café",
+    "local": "Chicago",
+    "links": "./perfis/borsoi.html"
+  },
+  {
+    "nome": "Harina Café",
+    "local": "Chicago",
+    "links": "./perfis/harina.html"
+  },
+  {
+    "nome": "Café KM",
+    "local": "Chicago",
+    "links": "./perfis/cafekm.html"
+  },
+  {
+    "nome": "Delicatessen Morada Colonial",
+    "local": "Chicago",
+    "links": "./perfis/moradacolonial.html"
+  },
+  {
+    "nome": "Silva Café",
+    "local": "Chicago",
+    "links": "./perfis/silvacafe.html"
+  },
+  {
+    "nome": "Santa Clara",
+    "local": "Chicago",
+    "links": "./perfis/santaclara.html"
+  }
+]
