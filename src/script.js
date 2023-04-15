@@ -107,12 +107,20 @@ function exibirElementos() {
   var conteudo = document.getElementById("conteúdo");
   var resultados = document.getElementById("search-result");
   resultados.addEventListener('click', function(event) {
-    if (event.target.tagName === 'A') {
+    if (event.target.tagName != 'A') {
+      conteudo.style.display = 'block';
+      resultados.style.display = 'none';
+      return;
+    }
+    /*if (event.target.tagName === 'A') {
       return;
     }else{
       conteudo.style.display = 'block';
       resultados.style.display = 'none';
     }
+    conteudo.style.display = 'block';
+    resultados.style.display = 'none';*/
+    
   });
 
   

@@ -2,111 +2,111 @@
   {
     "nome": "Castigliani Cafés",
     "local": "New York",
-    "links": "./Paginas/PerfisCafeteria/Castigliani.html"
+    "links": "./site/perfis/castigliani.html"
   },
   {
     "nome": "Sao Braz Coffee",
     "local": "Los Angeles",
-    "links": "./Paginas/PerfisCafeteria/SaoBraz.html"
+    "links": "./site/perfis/saobraz.html"
   },
   {
     "nome": "Delta Expresso",
     "local": "Chicago",
-    "links": "./Paginas/PerfisCafeteria/Delta.html"
+    "links": "./site/perfis/delta.html"
   },
   {
     "nome": "Café Jaqueira",
     "local": "Chicago",
-    "links": "./Paginas/PerfisCafeteria/Jaqueira.html"
+    "links": "./site/perfis/jaqueira.html"
   },
   {
     "nome": "Contém Café",
     "local": "Chicago",
-    "links": "./Paginas/PerfisCafeteria/Contem.html"
+    "links": "./site/perfis/contem.html"
   },
   {
     "nome": "Com Dengo",
     "local": "Chicago",
-    "links": "./Paginas/PerfisCafeteria/ComDengo.html"
+    "links": "./site/perfis/comdengo.html"
   },
   {
     "nome": "D'Vino Caffé",
     "local": "Chicago",
-    "links": "./Paginas/PerfisCafeteria/Dvino.html"
+    "links": "./site/perfis/dvino.html"
   },
   {
     "nome": "Versado Café",
     "local": "Chicago",
-    "links": "./Paginas/PerfisCafeteria/Versado.html"
+    "links": "./site/perfis/versado.html"
   },
   {
     "nome": "Tokyo's Cafe",
     "local": "Chicago",
-    "links": "./Paginas/PerfisCafeteria/Tokyos.html"
+    "links": "./site/perfis/tokyos.html"
   },
   {
     "nome": "Galo Padeiro",
     "local": "Chicago",
-    "links": "./Paginas/PerfisCafeteria/GaloPadeiro.html"
+    "links": "./site/perfis/galopadeiro.html"
   },
   {
     "nome": "Elã - Cafés",
     "local": "Chicago",
-    "links": "./Paginas/PerfisCafeteria/Ela.html"
+    "links": "./site/perfis/ela.html"
   },
   {
     "nome": "Café - Tão",
     "local": "Chicago",
-    "links": "./Paginas/PerfisCafeteria/CafeTao.html"
+    "links": "./site/perfis/cafetao.html"
   },
   {
     "nome": "Café mais Prosa",
     "local": "Chicago",
-    "links": "./Paginas/PerfisCafeteria/MaisProsa.html"
+    "links": "./site/perfis/maisprosa.html"
   },
   {
     "nome": "O Pátio Café & Cozinha",
     "local": "Chicago",
-    "links": "./Paginas/PerfisCafeteria/Patio.html"
+    "links": "./site/perfis/patio.html"
   },
   {
     "nome": "Lalá Café",
     "local": "Chicago",
-    "links": "./Paginas/PerfisCafeteria/LalaCafe.html"
+    "links": "./site/perfis/lalacafe.html"
   },
   {
     "nome": "Cafetteria Bistrô",
     "local": "Chicago",
-    "links": "./Paginas/PerfisCafeteria/Bistro.html"
+    "links": "./site/perfis/bistro.html"
   },
   {
     "nome": "Borsoi Café",
     "local": "Chicago",
-    "links": "./Paginas/PerfisCafeteria/Borsoi.html"
+    "links": "./site/perfis/borsoi.html"
   },
   {
     "nome": "Harina Café",
     "local": "Chicago",
-    "links": "./Paginas/PerfisCafeteria/Harina.html"
+    "links": "./site/perfis/harina.html"
   },
   {
     "nome": "Café KM",
     "local": "Chicago",
-    "links": "./Paginas/PerfisCafeteria/CafeKm.html"
+    "links": "./site/perfis/cafekm.html"
   },
   {
     "nome": "Delicatessen Morada Colonial",
     "local": "Chicago",
-    "links": "./Paginas/PerfisCafeteria/MoradaColonial.html"
+    "links": "./site/perfis/moradacolonial.html"
   },
   {
     "nome": "Silva Café",
     "local": "Chicago",
-    "links": "./Paginas/PerfisCafeteria/SilvaCafe.html"
+    "links": "./site/perfis/silvacafe.html"
   },
   {
     "nome": "Santa Clara",
     "local": "Chicago",
-    "links": "./Paginas/PerfisCafeteria/SantaClara.html"
+    "links": "./site/perfis/santaclara.html"
   }
 ]
