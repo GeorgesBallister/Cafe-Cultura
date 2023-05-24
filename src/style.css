@@ -56,6 +56,7 @@ h3 {
 
 
 .btn {
+
   padding: 10px 20px;
   font-size: 16px;
   margin-bottom: 10px;
@@ -492,4 +493,148 @@ h3 {
 
 .cafeterias-proximas-itens img{
   width: 100%;
+}
+
+
+
+
+/*Cafeteria Grid*/
+.cafeteria-container{
+  width: 100%;  
+  overflow-x: hidden;
+}
+.cafeteria-grid{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+
+}
+.cafeteria-item{
+  flex: 0 0 auto;
+}
+
+.painel-Cafeteria{
+  
+  background: linear-gradient(171.66deg, #282C34 2.28%, #10131A 101.36%);
+  border-radius: 23px;
+  width: 40%;
+  height: 30%;
+  margin-left: 3%;
+  margin-bottom: 3%;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.painel-Cafeteria *{
+
+  color: white;
+  padding: 2% 5% 0 5%;
+  font-size: 15pt;
+}
+.painel-Cafeteria h2{
+  color: #83868D;
+}
+
+.painel-Cafeteria img{
+  width: 100%;
+  height: 10%;
+  padding: 5%;
+}
+
+
+
+
+
+
+
+/*Painel Grande*/
+.painel-cafeteria-grande{
+  max-height: 15rem;
+  width: 100%;
+  background: linear-gradient(171.66deg, #282C34 2.28%, #10131A 101.36%);
+
+  display: flex;
+}
+
+.painel-cafeteria-grande *{
+  margin: 2%;
+  color: white;
+  padding: 0%;
+  font-size: 15pt;
+  justify-content: start;
+  width: 100%;
+}
+.painel-cafeteria-grande h2{
+  color: #83868D;
+  font-size: 20pt;
+}
+
+.painel-cafeteria-grande h3{
+  padding-top: 20%;
+  color: #D98046;
+}
+
+.painel-cafeteria-grande img{
+  margin: 2%;
+  width: 80%;
+}
+.painel-informacoes{
+margin-left: 0px;
+}
+
+
+
+
+
+
+/*Barrinha de Avaliação - Botão Cafeteria Grid*/
+.avaliacao-Painel{
+  display: flex;
+  background-color: rgba(196,196,196, 0.08);
+  width: 8rem;
+  height: 30%;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin:  5%;
+  font-weight: bold;
+  border-radius: 0 30px;
+}
+.avaliacao-Painel *{
+  width: 100%;
+  height: auto;
+}
+.avaliacao-Painel img{
+  width: 2.2rem;
+  filter: invert(77%) sepia(23%) saturate(6039%) hue-rotate(329deg) brightness(91%) contrast(86%);
+}
+.avaliacao-Painel p{
+  padding-top: 4px;
+}
+
+.avaliacao-Painel-menor{
+  width: 10rem;
+  height: 2rem;
+  display: flex;
+  background-color: rgba(196,196,196, 0.08);
+  padding-left: 5%;
+  margin:  5%;
+  margin-left: 20%;
+  font-weight: bold;
+  border-radius: 0 30px;
+  margin-top: 0%;
+}
+
+.avaliacao-Painel-menor img{
+  width: 1rem;
+  filter: invert(77%) sepia(23%) saturate(6039%) hue-rotate(329deg) brightness(91%) contrast(86%);
+}
+
+.avaliacao-Painel-menor p{
+  font-size: 11pt;
+  padding-top: 4px;
+}
+
+.itens-somados{
+  display: inline-flex;
 }

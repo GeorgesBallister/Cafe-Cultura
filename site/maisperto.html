@@ -10,16 +10,18 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
   <link rel="stylesheet" href="../src/style.css" />
 
   <!--PWA-->
-  <script>navigator.serviceWorker.register("service-worker.js")</script> 
+  <script>navigator.serviceWorker.register("service-worker.js")</script>
   <link rel="manifest" href="../manifest.json">
-  <meta name="theme-color" content="#ffffff"/>
+  <meta name="theme-color" content="#ffffff" />
   <!--Chamar o service worker do PWA-->
   <script src="../service-worker.js"></script>
-  
+
 </head>
 
 <body>
@@ -27,20 +29,90 @@
     <div class="header">
       <div class="logo-img">
         <img src="../Images/logo-cafe.webp" alt="Logo do Café Cultura">
-        <!--<h1>Café <span style="color:#D2A754">Cultura</span></h1>
-        <img src="./Images/Coffee cupXicrinha-Icone.png" alt="Logo-Titulo">-->
       </div>
 
-    </div>  
+    </div>
   </header>
 
+
+  <!--Painel Grande Base-->
+  <div class="painel-cafeteria-grande">
+    <img src="../Images/Assets/Imagem painel Grande.png" alt="imagem do Lugar">
+    <!--As imagem tem que estar numa proporção 2:1-->
+    <div class="itens-somados">
+      <div class="painel-informacoes">
+        <h1>Nome Do Bagulho</h1>
+        <h2>Lugar</h2>
+        <h3>1.1KM</h3>
+      </div>
+      <div class="avaliacao-Painel-menor">
+        <img src="../Images/Assets/Estrela-Avaliação.svg" alt="Estrela da Avaliação">
+        <p>4.3</p>
+      </div>
+    </div>
+  </div>
+
+  <!--Painel Grande Base-->
+  <div class="painel-cafeteria-grande">
+    <img src="../Images/Assets/Imagem painel Grande.png" alt="imagem do Lugar">
+    <!--As imagem tem que estar numa proporção 2:1-->
+    <div class="itens-somados">
+      <div class="painel-informacoes">
+        <h1>Nome Do Bagulho</h1>
+        <h2>Lugar</h2>
+        <h3>1.1KM</h3>
+      </div>
+      <div class="avaliacao-Painel-menor">
+        <img src="../Images/Assets/Estrela-Avaliação.svg" alt="Estrela da Avaliação">
+        <p>4.3</p>
+      </div>
+    </div>
+  </div>
+
+    <!--Painel Grande Base-->
+    <div class="painel-cafeteria-grande">
+      <img src="../Images/Assets/Imagem painel Grande.png" alt="imagem do Lugar">
+      <!--As imagem tem que estar numa proporção 2:1-->
+      <div class="itens-somados">
+        <div class="painel-informacoes">
+          <h1>Nome Do Bagulho</h1>
+          <h2>Lugar</h2>
+          <h3>1.1KM</h3>
+        </div>
+        <div class="avaliacao-Painel-menor">
+          <img src="../Images/Assets/Estrela-Avaliação.svg" alt="Estrela da Avaliação">
+          <p>4.3</p>
+        </div>
+      </div>
+    </div>
+
+      <!--Painel Grande Base-->
+  <div class="painel-cafeteria-grande">
+    <img src="../Images/Assets/Imagem painel Grande.png" alt="imagem do Lugar">
+    <!--As imagem tem que estar numa proporção 2:1-->
+    <div class="itens-somados">
+      <div class="painel-informacoes">
+        <h1>Nome Do Bagulho</h1>
+        <h2>Lugar</h2>
+        <h3>1.1KM</h3>
+      </div>
+      <div class="avaliacao-Painel-menor">
+        <img src="../Images/Assets/Estrela-Avaliação.svg" alt="Estrela da Avaliação">
+        <p>4.3</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
   <ul id="locations" class="locations"></ul>
-
-
-
-
-
-
 
   <!--Fotter da Pagina-->
   </main>
@@ -233,13 +305,13 @@
         }
         const listapesq = document.createElement('li');
         const link = document.createElement('a');
-      
+
         link.innerText = item.nome;
         link.href = item.links;
         listapesq.appendChild(link);
         resultados.appendChild(listapesq);
-      
-        listapesq.addEventListener('click', function() {
+
+        listapesq.addEventListener('click', function () {
           window.location.href = item.links;
         });
       },
@@ -266,6 +338,10 @@
       return deg * (Math.PI / 180);
     }
   </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
