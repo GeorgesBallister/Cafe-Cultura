@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description"
+    content="Café Cultura - Vitrine de Cafeterias da Região Metropolitana do Recife, Mostrando as melhores cafeterias e as mais próximas de você.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Cultura</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <link rel="stylesheet" href="./src/style.css">
+
+  <!--PWA-->
+  <script>navigator.serviceWorker.register("service-worker.js")</script>
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#ffffff" />
+  <!--Chamar o service worker do PWA-->
+  <script src="/service-worker.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <div class="logo-img">
+        <img src="./Images/logo-cafe.webp" alt="Logo do Café Cultura">
+      </div>
+
+    </div>
+  </header>
+  <main>
+    <div class="search-wrapper">
+      <form class="search-form">
+        <div class="search-icon">
+          <i class="fas fa-search"></i>
+        </div>
+        <div id="search-container">
+          <input type="text" id="search1" onfocus="ocultarElementos()" onblur="exibirElementos()" class="search-input"
+            placeholder="Pesquisar">
+        </div>
+      </form>
+    </div>
+    <ul id="search-result" class="results" style="display:none">
+
+    </ul>
+    <div id="conteúdo" style="display:block">
+      <h2>Categorias</h2>
+
+      <div class="container">
+        <div class="btn-group-vertical">
+          <button type="button" id="btn1" class="btn  rounded-pill" onclick="toggleActive(this)">Café
+            escritório</button>
+          <button type="button" id="btn2" class="btn  rounded-pill" onclick="toggleActive(this)">Café
+            romântico</button>
+          <button type="button" id="btn3" class="btn  rounded-pill" onclick="toggleActive(this)">Café
+            colônial</button>
+        </div>
+      </div>
+
+      <h3 id="txtrec" style="text-shadow: 3px 3px 3px rgba(10, 10, 10, 0.2);">Recomendações para você:</h3>
+      <h3 id="txtava" style="display:none; text-shadow: 3px 3px 3px rgba(10, 10,
+        10, 0.2);">Cafeterias mais avaliadas para você:</h3>
+
+
+
+
+      <!--Grid em si-->
+      <div class="cafeteria-container" id="cafeteria-containers">
+        <div id="grid-0" >
+          <!-- Base Grid -->
+          <!-- Linha do Grid -->
+          <div class="cafeteria-grid" id="cafeteria-grid-0-1">
+            <!-- Inicio do Grid -->
+            <!-- Fim da Linha do Grid -->
+          </div>
+          <div class="cafeteria-grid" id="cafeteria-grid-0-2">
+            <!-- Inicio do Grid -->
+            <!-- Fim da Linha do Grid -->
+          </div>
+        </div>
+        <div id="grid-1" style="display:none;">
+          <!-- Grid 1 -->
+          <!-- Linha do Grid -->
+          <div class="cafeteria-grid" id="cafeteria-grid-1-1">
+            <!-- Inicio do Grid -->
+            <!-- Fim da Linha do Grid -->
+          </div>
+          <div class="cafeteria-grid" id="cafeteria-grid-1-2">
+            <!-- Inicio do Grid -->
+            <!-- Fim da Linha do Grid -->
+          </div>
+        </div>
+        <div id="grid-2" style="display:none;">
+          <!-- Grid 2 -->
+          <!-- Linha do Grid -->
+          <div class="cafeteria-grid" id="cafeteria-grid-2-1">
+            <!-- Inicio do Grid -->
+            <!-- Fim da Linha do Grid -->
+          </div>
+          <div class="cafeteria-grid" id="cafeteria-grid-2-2">
+            <!-- Inicio do Grid -->
+            <!-- Fim da Linha do Grid -->
+          </div>
+        </div>
+        <div id="grid-3" style="display:none;">
+          <!-- Grid 3 -->
+          <!-- Linha do Grid -->
+          <div class="cafeteria-grid" id="cafeteria-grid-3-1">
+            <!-- Inicio do Grid -->
+            <!-- Fim da Linha do Grid -->
+          </div>
+          <div class="cafeteria-grid" id="cafeteria-grid-3-2">
+            <!-- Inicio do Grid -->
+            <!-- Fim da Linha do Grid -->
+          </div>
+        </div>
+        <!--Fim do Grid-->
+      </div>
+
+
+  </main>
+  <div id="contfooter" class="footer">
+    <a href="./index.html" style="text-decoration:none; cursor:pointer;" class="footer-icon active">
+      <i class="fas fa-home"></i>
+      <div class="footer-icon-text active">Início</div>
+    </a>
+    <a href="./site/maisperto.html" style="text-decoration:none;
+        cursor:pointer;" class="footer-icon">
+      <i class="fas fa-map-marker-alt"></i>
+      <div class="footer-icon-text">Mais perto de você</div>
+    </a>
+    <a href="./site/perfilcaf.html" style="text-decoration:none;
+        cursor:pointer;" class="footer-icon">
+      <i class="fas fa-mug-hot"></i>
+      <div class="footer-icon-text">Perfil cafeteria</div>
+    </a>
+  </div>
+  </div>
+
+<!--
+FORMATO JSON MONGO:
+
+{
+  "nome": "Restaurant Name",
+  "local": "Restaurant Location",
+  "latitude": 37.7749,
+  "longitude": -122.4194,
+  "avaliacao": 4.5,
+  "fotoPerfil": "http://example.com/profile_photo.jpg",
+  "fotoRecomend": "http://example.com/recommendation_photo.jpg",
+  "fotoCardapio": "http://example.com/menu_photo.jpg",
+  "horarioFunc": "Monday-Friday: 9am-10pm"
+}
+
+-->
+  <script>
+    window.onload = function () {
+      fetch("http://127.0.0.1:3000/cafeteria/") 
+          .then(async (data) => {
+              const response = await data.json();
+              const totalGridNumbers = 3; // Total number of gridNumbers (0 to 3)
+              const totalGridRows = 2; // Total number of gridRows (1 and 2)
+              const itemsPerRow = 3; // Number of items per gridRow
+              let gridNumber = 0; // Starting gridNumber
+              let gridRow = 1; // Starting gridRow
+              let counterItems = 0; // Counter for tracking items in each gridRow
+              let counterRows = 0; // Counter for tracking gridRows in each gridNumber
+              response.cafeterias.forEach(cafeterias => {
+                //window.alert(cafeterias.nome);
+                  const cafeteriaCardDiv = document.createElement("div")
+                  cafeteriaCardDiv.className = "cafeteria-item painel-Cafeteria"
+                  const cafeteriaCardImg = document.createElement("img")
+                  const cafeteriaCardTitulo = document.createElement("h1")
+                  const cafeteriaCardLocal = document.createElement("h2")
+                  const cafeteriaCardAvalDiv = document.createElement("div")
+                  cafeteriaCardAvalDiv.className = "avaliacao-Painel"
+                  const cafeteriaCardAvalImg = document.createElement("img")
+                  const cafeteriaCardAval = document.createElement("p")
+                  const clickable = document.createElement("a")
+                  cafeteriaCardImg.src = cafeterias.fotoRecomend;
+                  cafeteriaCardTitulo.append(cafeterias.nome)
+                  cafeteriaCardLocal.append(cafeterias.local)
+                  cafeteriaCardAval.append(cafeterias.avaliacao)
+                  cafeteriaCardAvalImg.src = "./Images/Assets/Estrela-Avaliação.svg"
+                  //clickable.href = `./site/perfis/${cafeterias.nomeLink}`;
+                  cafeteriaCardAvalDiv.appendChild(cafeteriaCardAvalImg)
+                  cafeteriaCardAvalDiv.appendChild(cafeteriaCardAval)
+                  cafeteriaCardDiv.appendChild(cafeteriaCardImg)
+                  cafeteriaCardDiv.appendChild(cafeteriaCardTitulo)
+                  cafeteriaCardDiv.appendChild(cafeteriaCardLocal)
+                  cafeteriaCardDiv.appendChild(cafeteriaCardAvalDiv)
+                  cafeteriaCardDiv.addEventListener("click", function() {
+                    // Redirect to another page
+                    window.location.href = `./site/perfis/${cafeterias.nomeLink}.html`;
+                  });
+                  if(counterItems < 3){
+                  const cafeteriaGrid = document.getElementById(`cafeteria-grid-${gridNumber}-${gridRow}`);
+                  cafeteriaGrid.appendChild(cafeteriaCardDiv);
+                }
+                  counterItems++;
+                  if(counterItems==3)
+                  {
+                    counterItems=0;
+                    if(gridRow==2)
+                    {
+                      gridRow=0;
+                      gridNumber++;
+                    }
+                    gridRow++;
+                  }
+              })
+            })
+          };
+         
+  </script>
+
+
+
+
+
+  <script src="./src/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
